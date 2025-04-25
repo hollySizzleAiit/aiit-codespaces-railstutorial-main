@@ -43,10 +43,9 @@
     "vscode": {
       "extensions": [
         "GitHub.codespaces",
-        "Shopify.ruby-lsp",   // https://github.com/Shopify/ruby-lsp
-        "castwide.solargraph" // https://github.com/castwide/vscode-solargraph
-        //"rebornix.Ruby",    // https://github.com/rubyide/vscode-ruby (Deprecated)
-
+        "Shopify.ruby-lsp",
+        "castwide.solargraph",
+        "RooVeterinaryInc.roo-cline"
       ],
       "settings": {
         // General settings for Codespaces (VS Code)
