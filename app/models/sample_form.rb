@@ -1,0 +1,2 @@
+class SampleForm < ApplicationRecord
+end

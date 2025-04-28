@@ -1,0 +1,123 @@
+<%= form_with(model: sample_form) do |form| %>
+  <% if sample_form.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(sample_form.errors.count, "error") %> prohibited this sample_form from being saved:</h2>
+
+      <ul>
+        <% sample_form.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :text, style: "display: block" %>
+    <%= form.text_field :text %>
+  </div>
+
+  <div>
+    <%= form.label :password, style: "display: block" %>
+    <%= form.password_field :password %>
+  </div>
+
+  <div>
+    <%= form.label :search, style: "display: block" %>
+    <%= form.search_field :search %>
+  </div>
+
+  <div>
+    <%= form.label :tel, style: "display: block" %>
+    <%= form.telephone_field :tel %>
+  </div>
+
+  <div>
+    <%= form.label :url, style: "display: block" %>
+    <%= form.url_field :url %>
+  </div>
+
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.email_field :email %>
+  </div>
+
+  <div>
+    <%= form.label :number, style: "display: block" %>
+    <%= form.number_field :number %>
+  </div>
+
+  <div>
+    <%= form.label :range, style: "display: block" %>
+    <%= form.range_field :range %>
+  </div>
+
+  <div>
+    <%= form.label :color, style: "display: block" %>
+    <%= form.color_field :color %>
+  </div>
+
+  <div>
+    <%= form.label :date, style: "display: block" %>
+    <%= form.date_field :date %>
+  </div>
+
+  <div>
+    <%= form.label :datetime_local, style: "display: block" %>
+    <%= form.datetime_local_field :datetime_local %>
+  </div>
+
+  <div>
+    <%= form.label :month, style: "display: block" %>
+    <%= form.month_field :month %>
+  </div>
+
+  <div>
+    <%= form.label :week, style: "display: block" %>
+    <%= form.week_field :week %>
+  </div>
+
+  <div>
+    <%= form.label :time, style: "display: block" %>
+    <%= form.time_field :time %>
+  </div>
+
+  <div>
+    <%= form.label :checkbox, style: "display: block" %>
+    <%= form.check_box :checkbox %>
+  </div>
+
+  <div>
+    <%= form.label :radio, style: "display: block" %>
+    <%# ラジオボタンは通常、複数の選択肢から1つを選ぶために使われます %>
+    <%# ここでは例として "Option 1" と "Option 2" を用意します %>
+    <%= form.radio_button :radio, "option1" %>
+    <%= form.label :radio_option1, "Option 1" %>
+    <%= form.radio_button :radio, "option2" %>
+    <%= form.label :radio_option2, "Option 2" %>
+  </div>
+
+  <div>
+    <%= form.label :file, style: "display: block" %>
+    <%= form.file_field :file %>
+  </div>
+
+  <div>
+    <%# hiddenフィールドは通常ラベルを表示しません %>
+    <%= form.hidden_field :hidden %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+
+
+  <div>
+    <%= form.label :reset_button, "Reset Button", style: "display: block" %>
+    <%= button_tag "Reset Form", type: :reset %>
+  </div>
+
+  <div>
+    <%= form.label :generic_button, "Generic Button", style: "display: block" %>
+    <%= form.button "Generic Button", type: "button" %>
+  </div>
+<% end %>

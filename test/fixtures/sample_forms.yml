@@ -1,0 +1,41 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  text: MyString
+  password: MyString
+  search: MyString
+  tel: MyString
+  url: MyString
+  email: MyString
+  number: 1
+  range: 1
+  color: MyString
+  date: 2025-04-28
+  datetime_local: 2025-04-28 08:24:03
+  month: 2025-04-28
+  week: 2025-04-28
+  time: 2025-04-28 08:24:03
+  checkbox: false
+  radio: MyString
+  file: MyString
+  hidden: MyString
+
+two:
+  text: MyString
+  password: MyString
+  search: MyString
+  tel: MyString
+  url: MyString
+  email: MyString
+  number: 1
+  range: 1
+  color: MyString
+  date: 2025-04-28
+  datetime_local: 2025-04-28 08:24:03
+  month: 2025-04-28
+  week: 2025-04-28
+  time: 2025-04-28 08:24:03
+  checkbox: false
+  radio: MyString
+  file: MyString
+  hidden: MyString
